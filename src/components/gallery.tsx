@@ -34,11 +34,11 @@ export default function Gallery({ asRow = false }: GalleryProps) {
     <>
       <div className="relative">
         {asRow && (
-          <div className="absolute -left-16 top-1/2 -translate-y-1/2 z-10">
+          <div className="absolute -left-4 top-1/2 -translate-x-full -translate-y-1/2 z-10">
             <button
               onClick={() => setPage(prev => Math.max(prev - 1, 0))}
               disabled={page === 0}
-              className="p-2 bg-white rounded-full shadow disabled:opacity-30"
+              className="p-4 bg-white rounded-full shadow disabled:opacity-30 text-5xl cursor-pointer"
             >
               <ChevronLeft />
             </button>
@@ -83,11 +83,11 @@ export default function Gallery({ asRow = false }: GalleryProps) {
         </div>
 
         {asRow && (
-          <div className="absolute -right-16 top-1/2 -translate-y-1/2 z-10">
+          <div className="absolute -right-4 top-1/2 translate-x-full -translate-y-1/2 z-10">
             <button
               onClick={() => setPage(prev => Math.min(prev + 1, totalPages - 1))}
               disabled={page >= totalPages - 1}
-              className="p-2 bg-white rounded-full shadow disabled:opacity-30"
+              className="p-4 bg-white rounded-full shadow disabled:opacity-30 text-5xl cursor-pointer"
             >
               <ChevronRight />
             </button>
