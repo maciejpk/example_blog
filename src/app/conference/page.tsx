@@ -1,3 +1,5 @@
+import Gallery from "@/components/gallery";
+
 export default function ConferenceReport() {
   return (
     <article className="max-w-4xl mx-auto p-6 prose prose-lg prose-gray dark:prose-invert">
@@ -32,6 +34,25 @@ export default function ConferenceReport() {
         <p className="mt-4">
           Ein Highlight war der Stadtrundgang „<strong>Karl-Chemnitz-City</strong>“, der symbolträchtige Orte der sozialistischen und postsozialistischen Stadtgeschichte in Beziehung zur Konferenzthema setzte.
         </p>
+      </section>
+
+      <section
+        className="
+          w-screen 
+          ml-[calc(-50vw+50%-200px)] 
+          bg-gray-100 
+          py-10 
+          z-10
+          mb-2
+          relative
+        "
+      >
+        <div className="max-w-screen-xl mx-auto px-4">
+          <Gallery asRow={true} />
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            meow
+          </div> */}
+        </div>
       </section>
 
       <section className="mb-8">

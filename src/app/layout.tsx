@@ -1,20 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "../../styles/style.css";
 
 import Header from "@/components/header";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Blog des Johann-Gottfried-Herder-Forschungsrats",
@@ -30,15 +20,24 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`
-          ${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black font-sans leading-relaxed
+          body-myriad antialiased bg-white text-black font-sans leading-relaxed
           
         `}
       >
         <Header />
-        <main className="max-w-screen-xl px-4 mx-auto">
+
+        {/* Mobile nav */}
+        <div className="lg:hidden px-4 flex justify-center align-center">
+          <NavBar />
+        </div>
+
+        <main className="max-w-screen-xl mx-auto">
           <div className="flex lg:space-x-10">
-            <NavBar />
-            <div className="w-full">
+            {/* Desktop nav */}
+            <aside className="hidden lg:block w-72 flex-shrink-0">
+              <NavBar />
+            </aside>
+            <div className="w-full space-y-16">
               {children}
             </div>
           </div>
