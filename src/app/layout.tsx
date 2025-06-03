@@ -38,7 +38,9 @@ export default function RootLayout({
         <main className="max-w-screen-xl px-4 mx-auto">
           <div className="flex lg:space-x-10">
             <NavBar />
-            {children}
+            <div className="w-full">
+              {children}
+            </div>
           </div>
         </main>
         <Footer />
