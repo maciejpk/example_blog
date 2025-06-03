@@ -38,8 +38,9 @@ export default function ConferenceReport() {
 
       <section
         className="
+          hidden lg:block
           w-screen 
-          ml-[calc(-50vw+50%-200px)] 
+          ml-[calc(-50vw+50%-172px)] 
           bg-gray-100 
           py-10 
           z-10
