@@ -1,102 +1,133 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <header className="bg-red-700 text-white py-6 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-3xl font-bold">EFBI Congress 2024</h1>
+          <p className="text-xl">Varieties of Communism – Comparative Political Perspectives</p>
         </div>
+      </header>
+
+      <main className="max-w-5xl mx-auto py-10 px-4">
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-2">Overview</h2>
+          <p className="mb-4">
+            Communism played a major role in shaping the 20th century, and its legacy persists today
+            in global politics. This conference explores the diversity within communist regimes over time
+            and across regions, analyzing both political ideologies and practical governance.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-2">Program: 17 May 2024</h2>
+          <ul className="space-y-2">
+            <li><strong>09:00–09:30:</strong> Registration and Coffee</li>
+            <li><strong>09:30–10:00:</strong> Welcome Address</li>
+            <li>
+              <strong>10:00–11:30:</strong> Conceptual Considerations I
+              <ul className="ml-6 list-disc">
+                <li>Slater, Bernhard – Varieties of Communism</li>
+                <li>Iza Ding – Communism and Authoritarianism</li>
+                <li>Bernhard et al. – Post-Crisis Adaptation</li>
+                <li>Discussant: Steffen Kailitz</li>
+              </ul>
+            </li>
+            <li><strong>11:30–12:30:</strong> Lunch Break</li>
+            <li><strong>12:30–14:30:</strong> Karl-Chemnitz-City (Brabenetz)</li>
+            <li>
+              <strong>14:30–16:00:</strong> Conceptual Considerations II
+              <ul className="ml-6 list-disc">
+                <li>Kailitz – Communist Ideocracies</li>
+                <li>Kopstein – Economic History</li>
+                <li>Lindenberger – Historical Comparisons</li>
+                <li>Discussant: Dan Slater</li>
+              </ul>
+            </li>
+            <li><strong>16:00–16:30:</strong> Coffee Break</li>
+            <li>
+              <strong>17:00–18:30:</strong> Communism in Africa, South America, and Asia
+              <ul className="ml-6 list-disc">
+                <li>Osei – Legacies in Africa</li>
+                <li>Kneuer – Chávez’s Socialism</li>
+                <li>Croissant – Party-Military in Asia</li>
+                <li>Discussant: Pierre Landry</li>
+              </ul>
+            </li>
+            <li><strong>19:00:</strong> Dinner</li>
+          </ul>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-2">Program: 18 May 2024</h2>
+          <ul className="space-y-2">
+            <li>
+              <strong>09:00–11:00:</strong> Communist China
+              <ul className="ml-6 list-disc">
+                <li>Gold – Hong Kong Characteristics</li>
+                <li>Dimitrov – Cultural Security</li>
+                <li>Landry & Zhang – Developmental Consequences</li>
+                <li>Wemheuser – Market Socialism</li>
+                <li>Discussant: Iza Ding</li>
+              </ul>
+            </li>
+            <li><strong>11:00–11:30:</strong> Coffee Break</li>
+            <li>
+              <strong>11:30–13:00:</strong> Central and Eastern Europe I
+              <ul className="ml-6 list-disc">
+                <li>Grzybowska-Walecka – East-West Contacts</li>
+                <li>Reichert – Creative Union Model</li>
+                <li>Zysiak – Varieties of Citizenship</li>
+                <li>Discussant: Stefan Garsztecki</li>
+              </ul>
+            </li>
+            <li><strong>13:00–14:30:</strong> Lunch Break</li>
+            <li>
+              <strong>14:30–16:00:</strong> Central and Eastern Europe II
+              <ul className="ml-6 list-disc">
+                <li>Kocyba & Leistner – Civil Society</li>
+                <li>Bernhard – Inverted Imperialism</li>
+                <li>Stola – Communism in Poland</li>
+                <li>Discussant: Matt Reichert</li>
+              </ul>
+            </li>
+            <li><strong>16:00–16:30:</strong> Coffee Break</li>
+            <li>
+              <strong>16:30–18:00:</strong> Central and Eastern Europe III
+              <ul className="ml-6 list-disc">
+                <li>Marquardt – Institutions & Separatism</li>
+                <li>Garsztecki – National Traditions</li>
+                <li>Riedel – Democratic Backsliding</li>
+                <li>Discussant: Michael Bernhard</li>
+              </ul>
+            </li>
+            <li><strong>19:00:</strong> Dinner</li>
+          </ul>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-2">General Information</h2>
+          <p className="mb-2"><strong>Location:</strong> Altes Heizhaus, Chemnitz University of Technology</p>
+          <p className="mb-2"><strong>Accommodation:</strong> Biendo Hotel, Chemnitz</p>
+          <p className="mb-2"><strong>Documentation:</strong> Event will be photographed. Notify if not consented.</p>
+          <p className="mb-2"><strong>Catering:</strong> Vegan and vegetarian meals available</p>
+          <p className="mb-2"><strong>Registration:</strong> Contact: piotr.kocyba@uni-leipzig.de</p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-2">Organization</h2>
+          <ul className="list-disc ml-6">
+            <li>Piotr Kocyba</li>
+            <li>Katarzyna Grzybowska-Walecka</li>
+            <li>Michael Bernhard</li>
+            <li>Iza Ding</li>
+            <li>Stefan Garsztecki</li>
+            <li>Dan Slater</li>
+          </ul>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="bg-gray-100 text-center py-6 text-sm">
+        <p>EFBI © 2024 · <a href="https://www.efbi.de" className="text-blue-600">www.efbi.de</a></p>
       </footer>
     </div>
   );
