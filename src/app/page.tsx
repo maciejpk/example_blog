@@ -1,3 +1,5 @@
+import Gallery from "@/components/gallery";
+
 export default function Home() {
   return (
     <main className="max-w-5xl mx-auto py-10 px-4">
@@ -132,6 +134,11 @@ export default function Home() {
           <li>Stefan Garsztecki</li>
           <li>Dan Slater</li>
         </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-2">Gallery</h2>
+        <Gallery />
       </section>
     </main>
   );
