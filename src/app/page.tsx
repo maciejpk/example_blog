@@ -136,6 +136,10 @@ export default function Home() {
         </ul>
       </section>
 
+      <section className="mb-12">
+
+      </section>
+
       <section>
         <h2 className="text-2xl font-semibold mb-2">Gallery</h2>
         <Gallery />

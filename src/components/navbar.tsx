@@ -1,22 +1,26 @@
+import Link from "next/link";
+
 export default function NavBar() {
+  const links = [
+    ["Über uns / Der Verein", "conference"],
+    ["Veranstaltungen / Archiv", "#"],
+    ["Impressum", "#"],
+    ["Datenschutzerklärung", "#"],
+  ]
+
   return (
-    <nav className="bg-gray-100 py-6 px-4">
-      <div className="max-w-5xl mx-auto">
-        <ul className="flex justify-center space-x-4">
-          <li className="text-xl font-bold">
-            <a href="#" className="hover:underline">About</a>
-          </li>
-          <li className="text-xl font-bold">
-            <a href="#" className="hover:underline">Program</a>
-          </li>
-          <li className="text-xl font-bold">
-            <a href="#" className="hover:underline">Speakers</a>
-          </li>
-          <li className="text-xl font-bold">
-            <a href="#" className="hover:underline">Contact</a>
-          </li>
+    <aside className="w-64 bg-gray-100 border-r p-6 sticky top-16 self-start h-fit">
+      <nav>
+        <ul className="flex flex-col divide-y divide-black">
+          {links.map(([text, href]) => (
+            <li key={text} className="py-2 text-lg font-bold">
+              <Link href={href}>
+                {text}
+              </Link>
+            </li>
+          ))}
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </aside>
   );
 }
