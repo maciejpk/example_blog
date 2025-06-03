@@ -49,11 +49,7 @@ export default function ConferenceReport() {
         "
       >
         <div className="max-w-screen-xl mx-auto px-4">
-          <Gallery />
-          {/* <Gallery asRow={true} /> */}
-          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            meow
-          </div> */}
+          <Gallery asRow={true} />
         </div>
       </section>
 
